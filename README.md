@@ -11,8 +11,6 @@ Homer: 123: Homer Simpson
 
 The password is stored in encrypted form: XOR-encryption (the key is inside the program).
 
-Structure for working with the database:
-
 To work with the user base, the function looks like this: struct passwd * getpw (void) - returns a pointer to the struct passwd structure that contains information about the current user.
 
 Secure operation of the program is ensured - control and check for overflow of the arrays.
