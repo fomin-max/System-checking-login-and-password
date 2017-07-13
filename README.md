@@ -13,12 +13,6 @@ The password is stored in encrypted form: XOR-encryption (the key is inside the 
 
 Structure for working with the database:
 
-Struct passwd {
-    Char pw_name [30]; / * Unique username * / \n
-    Char pw_passwd [30]; / * User password * / \n
-    Char pw_realname [30]; / * Real user name * / \n
-};};
-
 To work with the user base, the function looks like this: struct passwd * getpw (void) - returns a pointer to the struct passwd structure that contains information about the current user.
 
 Secure operation of the program is ensured - control and check for overflow of the arrays.
